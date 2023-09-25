@@ -5,5 +5,5 @@ Neovim will look for personal settings in > ~/.config/nvim
 
 So just clone it to that directory with the following command:
 
-`git clone whatever ~/.config/nvim --depth=1`
+`git clone https://github.com/manuel-pross/nvim.git ~/.config/nvim --depth=1`
 
