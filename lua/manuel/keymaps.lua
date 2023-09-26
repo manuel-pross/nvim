@@ -16,6 +16,15 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- netrw
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- telescope
+local builtin = require('telescope.builtin')
+vim.keymap.set("n", "<leader>pf", builtin.find_files, {})
+
+-- find keyword (ripgrep)
+vim.keymap.set("n", "<leader>ps", function()
+	builtin.grep_string({ search = vim.fn.input("Grep > ") })
+end)
+
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
