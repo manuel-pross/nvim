@@ -45,6 +45,9 @@ return packer.startup(function(use)
 	use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
 
 	use { "nvim-telescope/telescope.nvim", tag = "0.1.3", requires = { {'nvim-lua/plenary.nvim'} } }
+	
+	-- Colorscheme
+	use ('Tsuzat/NeoSolarized.nvim')
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
