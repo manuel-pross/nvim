@@ -48,6 +48,18 @@ return packer.startup(function(use)
 	
 	-- Colorscheme
 	use ('Tsuzat/NeoSolarized.nvim')
+	
+	-- Completion
+	use "hrsh7th/nvim-cmp" -- Completion plugin
+	use "hrsh7th/cmp-buffer" -- Buffer completions
+	use "hrsh7th/cmp-path" -- Path completions
+	use "hrsh7th/cmp-cmdline" -- cmdline completion
+	use "saadparwaiz1/cmp_luasnip" -- snippet completions
+
+	-- snippets
+	use "L3MON4D3/Luasnip" --snippet engine
+	use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
