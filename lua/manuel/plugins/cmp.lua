@@ -7,6 +7,8 @@ return {
     "L3MON4D3/LuaSnip", -- snippet engine
     "saadparwaiz1/cmp_luasnip", -- for autocompletion
     "rafamadriz/friendly-snippets", -- useful snippets
+    "mattn/emmet-vim",
+    "dcampos/cmp-emmet-vim",
   },
   config = function()
     local cmp = require("cmp")
@@ -38,6 +40,7 @@ return {
         { name = "luasnip" }, --snippets
         { name = "buffer" }, -- text within current buffer
         { name = "path" }, -- file system paths
+        { name = "emmet_vim" },
       }),
     })
   end,
